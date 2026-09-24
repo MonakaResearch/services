@@ -403,6 +403,10 @@ func (b *Broker) Fini() error {
 	return nil
 }
 
+func (b *Broker) SetEndorsementsState(label string, request []byte, state bool) error {
+	return handler.ErrUnsupported
+}
+
 // Only supporting collected artifacts for now
 func taCoservQuery(trustAnchorID *comid.Environment) (*coserv.Coserv, error) {
 	envSelector := coserv.NewEnvironmentSelector()
