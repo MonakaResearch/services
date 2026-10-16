@@ -42,7 +42,7 @@ require (
 	github.com/stretchr/testify v1.11.1
 	github.com/tbaehler/gin-keycloak v1.6.1
 	github.com/veraison/apiclient v0.4.1-0.20260916152747-a064c3fc0e5a
-	github.com/veraison/ccatoken v1.3.2-0.20250512122414-b26aba0635c4
+	github.com/veraison/ccatoken v1.4.1-0.20260928091004-4b95c09a70de
 	github.com/veraison/cmw v0.2.0
 	github.com/veraison/corim v1.1.3-0.20260731101222-a4685b2cd5c2
 	github.com/veraison/corim-store v0.2.2-0.20260804102809-d1c9b858ead5

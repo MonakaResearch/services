@@ -231,7 +231,7 @@ function init_sqlite_stores() {
 }
 
 function init_clients() {
-	_init_client evcli github.com/veraison/evcli/v2@cf9de873
+	_init_client evcli github.com/veraison/evcli/v2@e4d2f902
 	_init_client cocli github.com/veraison/cocli@v1.0.0-alpha0.0.20260313151307-405ce39d50b6
 	_init_client pocli github.com/veraison/pocli@2fa24ea3
 	_init_client corim-store github.com/veraison/corim-store/cmd/corim-store@818cd5f652ce
@@ -572,7 +572,7 @@ function _deploy_bins() {
 		    $_INSTALL -m 0755 "$path" "${DEPLOYMENT_SCHEME_PLUGINS_DIR}/$(basename $path)"
 	    done
 
-	find "${ROOT_DIR}/endorsementstore/bin/" -name '*.plugin' -print0 | grep -z -v handler |
+	find "${ROOT_DIR}/store-plugin/bin/" -name '*.plugin' -print0 | grep -z -v handler |
 	    while IFS= read -r -d '' path; do
 		    $_INSTALL -m 0755 "$path" "${DEPLOYMENT_STORE_PLUGINS_DIR}/$(basename $path)"
 	    done
